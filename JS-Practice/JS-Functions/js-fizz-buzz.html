@@ -3,9 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Problem Solving Practice: Fizz Buzz</title>
+    <title>Problem-Solving Practice: Fizz Buzz</title>
 </head>
 <body>
-    
+    <h1>Problem-Solving Practice: Fizz Buzz</h1>
+    <p>Please look in the console inside of the browser's dev tool panel for the JavaScript programming and outputs.</p>
+    <script>
+        let answer = parseInt( prompt("Please enter the number you would like to FizzBuzz up to: ") );
+
+        for (let i = 1; i <= answer; i++) {
+            if (i % 3 === 0 && i % 5 === 0) {
+                console.log('fizz buzz');
+            } else if (i % 3 === 0) {
+                console.log('fizz');
+            } else if (i % 5 === 0) {
+                console.log('buzz');
+            } else {
+                console.log(i);
+            }            
+        }
+    </script>
 </body>
 </html>
