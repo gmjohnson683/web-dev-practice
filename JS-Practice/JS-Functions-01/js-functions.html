@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript Practice</title>
+    </head>
+    <body>
+        <script>
+            //JavaScript Practice Area
+
+            //Function #1: Add 7 to any number passed through the function
+            function add7(number) {
+                return number + 7;
+            }
+
+            console.log( add7(4) );
+
+            //Function #2: Multiplying two numbers that the user provides
+            function multiply(number1, number2) {
+                return number1 * number2;
+            }
+
+            console.log( multiply(4, 7) );
+
+            //Function #3: Capitalizes the first letter of a user-defined string, regardless of case
+            function capitalize (string1) {
+                let firstLetter = string1.slice(0, 1);
+                let remString = string1.slice(1)
+                return firstLetter.toUpperCase() + remString;
+            }
+
+            console.log( capitalize("honey badger") );
+
+            //Function #4: Obtains the last letter of a string and displays it to the user
+            function lastLetter(string2) {
+                return string2.at(-1);
+            }
+
+            console.log( lastLetter("lizard") );
+        </script>
+    </body>
+</html>
